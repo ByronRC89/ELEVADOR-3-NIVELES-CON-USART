@@ -12,12 +12,17 @@ Guarda el último valor mostrado en el display de 7 segmentos.
 Variable temporal usada para diversas operaciones.
 
 **Funciones**
-```main:`` Función principal que configura el sistema y entra en un bucle infinito para manejar la lógica del elevador.
+```main:``` Función principal que configura el sistema y entra en un bucle infinito para manejar la lógica del elevador.
+
 ```init:``` Configura los puertos GPIO para los displays y otros componentes del elevador.
-```keyboard_config:``` Configura los pines GPIO para el teclado y los sensores infrarrojos.
-```key_pressed:``` Lógica para detectar y manejar las pulsaciones de teclas, controla el movimiento del elevador y muestra la posición en el display.
-```print_bcd_7_segment_decoder_CC:``` Muestra un número en el display de 7 segmentos.
-```delayMs:``` Implementa un retraso en milisegundos (no definida en el código proporcionado, pero generalmente está implementada en otro lugar.
+
+```keyboard_config:```     Configura los pines GPIO para el teclado y los sensores infrarrojos.
+
+```key_pressed:```   Lógica para detectar y manejar las pulsaciones de teclas, controla el movimiento del elevador y muestra la posición en el display.
+
+```print_bcd_7_segment_decoder_CC:```     Muestra un número en el display de 7 segmentos.
+
+```delayMs:```    Implementa un retraso en milisegundos (no definida en el código proporcionado, pero generalmente está implementada en otro lugar.
 
 **Control del Display de 7 Segmentos**
 La función ```print_bcd_7_segment_decoder_CC``` se encarga de encender los segmentos correctos para mostrar números del 0 al 9 y letras A, b, C, d. Utiliza el registro ODR (Output Data Register) de GPIOB para controlar los segmentos del display.
