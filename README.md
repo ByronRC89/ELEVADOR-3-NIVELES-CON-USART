@@ -38,13 +38,21 @@ Funciones ```USART2_write```, ```USART2_putstring```, ```USART2_putstring_E``` p
 
 **Explicación de la Configuración de GPIO**
 Pines GPIO: Configurados para diferentes funciones:
+
 PB2, PB3, PB4, PB6, PB7, PB8, PB9: Configurados para controlar los segmentos del display de 7 segmentos.
+
 PA0 y PA1: Configurados para habilitar los displays comunes.
+
 PC5, PC6, PC8, PC9: Configurados como entradas para las filas del teclado.
+
 PC10 y PC11: Configurados para controlar el motor del elevador (subir y bajar).
+
 PC1: Configurado como entrada para sensor infrarojo, y este detiene el elevador en el nivel 1
+
 PC2: Configurado como entrada para sensor infrarojo, y este detiene el elevador en el nivel 2
+
 PC3: Configurado como entrada para sensor infrarojo, y este detiene el elevador en el nivel 3
+
 
 En conclusion: 
 tenemos el elevador con 3 niveles, por cada nivel tenemos un sensor que al determinar el boton seleccionado es donde tendra el paro de la cabina, todo es controlado por un teclado matricial de 4x4, y un led que me indica el boton precionado y nivel destino, tambien tenemos la comunicacion serial con la consola de arduino, con la que podemos observar los mensajes enviados desde una comunicacion serial USART2.
