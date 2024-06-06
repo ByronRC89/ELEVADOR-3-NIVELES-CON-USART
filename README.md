@@ -59,6 +59,8 @@ tenemos el elevador con 3 niveles, por cada nivel tenemos un sensor que al deter
 para el cambio de giro tenemos un drive L298 que es practicamente un puente H que nos permite el control de direccion para un motor DC normal, el cual el drive funciona y controla todo con 5v externos desde una fuente 
 ![captura elevador ](https://github.com/ByronRC89/ELEVADOR-3-NIVELES-CON-USART/assets/159856194/c549aec9-89e8-4ed9-b088-c5bd77eee7b4)
 
+VIDEO QUE MUESTRA EL FUNCIONAMIENTO Y COMUNICACION SERIAL
+
 https://www.youtube.com/watch?v=oT3lck19TvE
 
 
